@@ -5,7 +5,7 @@
     <string name="Email">Enter Your Email</string>
     <string name="Password">Enter the Password</string>
     <string name="Signin">Login</string>
-    <string name="forgotpass">Forgot Password</string>
+    <string name="forgotpass">Forgot Password?</string>
     <string name="resetPass">Reset Password</string>
     <string name="Register">Register</string>
     <string name="reqEmail">Email is required</string>

@@ -36,9 +36,9 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     static int count = 0;
     String category = "0";
-    public TextView register,forgotPassword;
+    public TextView register,forgotPassword, changelang;
     private EditText editTextEmail,editTextPassword;
-    private Button signIn,changelang;
+    private Button signIn;
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
     String uid;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ActionBar actionbar = getSupportActionBar();
         actionbar.setTitle(getResources().getString(R.string.app_name));
         setContentView(R.layout.activity_main);
-        changelang = (Button) findViewById(R.id.language);
+        changelang = (TextView) findViewById(R.id.language);
         changelang.setOnClickListener(MainActivity.this);
         register = (TextView) findViewById(R.id.register);
         register.setOnClickListener(MainActivity.this);
