@@ -69,12 +69,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         ></TextView>
-    <Spinner
-        android:id="@+id/JobCategorySpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        ></Spinner>
+
+        <Spinner
+            android:id="@+id/JobCategorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></Spinner>
 
         ></LinearLayout>
     <LinearLayout
@@ -159,9 +160,9 @@
             android:id="@+id/contactInfoEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:inputType="phone"
-            android:layout_marginLeft="20dp">
-        </EditText>
+            tools:ignore="TouchTargetSizeCheck"></EditText>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/salaryLayout"
@@ -183,21 +184,20 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             ></TextView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Currency"
-            android:textSize="20sp"
-            android:textColor="#000000"
             android:layout_marginLeft="55dp"
-            ></TextView>
+            android:text="@string/Currency"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
 
         <EditText
             android:id="@+id/salaryEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="number">
-        </EditText>
+            android:inputType="number"></EditText>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/HrsLayout"
@@ -294,17 +294,17 @@
             android:inputType="text">
         </EditText>
     </LinearLayout>
+
     <Button
         android:id="@+id/PostJob"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2196F3"
         android:text="@string/PostJob"
         android:textStyle="bold"
-        android:backgroundTint="#2196F3"
-        android:layout_marginTop="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"
-        ></Button>
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
